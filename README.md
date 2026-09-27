@@ -1,5 +1,7 @@
-# Spiel Ventures
+# Tommy Bomar / Spiel Ventures
 
-**Live storefront:** open [index.html](./index.html) or https://tommytbomar-dot.github.io/
+Live inbound offers (no Gumroad / FB / SSO):
 
-Email-order only. Tommy Bomar · tommytbomar@gmail.com
+**https://tommytbomar-dot.github.io/**
+
+Subjects: WANT KIT ($47) · WANT AUDIT ($97 + URL) · PHOTO RESTORE ($29/$79/$149/$497)

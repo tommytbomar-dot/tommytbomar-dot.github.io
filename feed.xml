@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Spiel Ventures Tips</title>
+<link>https://tommytbomar-dot.github.io/blog/</link>
+<description>Mobile leads, forms, GBP, photo restore tips</description>
+<item>
+<title>Put one mobile CTA above the fold</title>
+<link>https://tommytbomar-dot.github.io/blog/mobile-cta-above-fold.html</link>
+<guid>https://tommytbomar-dot.github.io/blog/mobile-cta-above-fold.html</guid>
+</item>
+<item>
+<title>When NAP and hours don't match Google</title>
+<link>https://tommytbomar-dot.github.io/blog/nap-hours-mismatch.html</link>
+<guid>https://tommytbomar-dot.github.io/blog/nap-hours-mismatch.html</guid>
+</item>
+<item>
+<title>Too many form fields kill quotes</title>
+<link>https://tommytbomar-dot.github.io/blog/form-fields-too-many.html</link>
+<guid>https://tommytbomar-dot.github.io/blog/form-fields-too-many.html</guid>
+</item>
+</channel>
+</rss>

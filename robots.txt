@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tommytbomar-dot.github.io/sitemap.xml

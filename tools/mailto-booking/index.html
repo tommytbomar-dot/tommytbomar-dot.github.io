@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mailto Booking Link Builder — free, no signup</title>
+<meta name="description" content="Build a click-to-email booking button with a pre-filled subject and questions. No backend, no signup, works anywhere you can paste HTML.">
+<style>body{margin:0;background:#0f1115;color:#e8eaf0;font:16px/1.5 system-ui,sans-serif}main{max-width:820px;margin:0 auto;padding:1.25rem}a{color:#4da3ff}.card{background:#171a21;border:1px solid #2a2f3a;border-radius:10px;padding:1rem;margin:1rem 0}label{display:block;font-size:.85rem;color:#9aa3b2;margin-top:.6rem}input,select,textarea{width:100%;padding:.55rem;background:#0c0e12;color:#e8eaf0;border:1px solid #2a2f3a;border-radius:6px;font:inherit}button,.btn{background:#4da3ff;color:#04121f;border:0;border-radius:6px;padding:.6rem 1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;margin:.5rem .5rem 0 0}pre{background:#0c0e12;border:1px solid #2a2f3a;padding:.8rem;border-radius:6px;overflow:auto;white-space:pre-wrap;word-break:break-word}.mut{color:#9aa3b2;font-size:.85rem}.ok{color:#8f8}.bad{color:#f88}.warn{color:#fc6}</style></head><body><main>
+<p><a href="../">← Tools</a></p><h1>Mailto Booking Link Builder</h1>
+<p>Create a button that opens the customer's email app with your address, a subject, and your intake questions already filled in. Paste it on any site, Google Business Profile post, or email signature. No backend, no signup, nothing is sent from this page.</p>
+<div class="card">
+<label>Your email<input id="to" placeholder="you@yourbusiness.com"></label>
+<label>Subject<input id="subject" value="Booking request"></label>
+<label>Intro line (optional)<input id="intro" value="Hi, I'd like to book an appointment."></label>
+<label>Questions, one per line<textarea id="fields" rows="5">Name
+Phone
+Address or ZIP
+What do you need done?
+Preferred day and time</textarea></label>
+<label>Button text<input id="label" value="Book by email"></label>
+<label>Button color<input id="color" type="color" value="#1a73e8"></label>
+<button id="go">Build link</button></div>
+<div class="card"><div id="err" class="bad"></div><p>Preview: <span id="prev" class="mut">(click Build)</span></p>
+<label>Plain link</label><pre id="href"></pre><label>HTML button</label><pre id="html"></pre></div>
+<div class="card"><strong>Want pro themes or a full booking page?</strong> Email me what you need.<br><a class="btn" href="mailto:tommytbomar@gmail.com?subject=WANT%20BOOKING%20PAGE">Email · WANT BOOKING PAGE</a>
+<p class="mut">Limits: mailto relies on the visitor having an email app configured, and some webmail users get a blank draft. Always offer a phone number too.</p></div>
+<p class="mut">MIT · Spiel Ventures</p>
+<script src="builder.js"></script><script>
+function v(i){return document.getElementById(i).value}
+document.getElementById('go').onclick=function(){var r=MailtoBuilder.build({to:v('to'),subject:v('subject'),intro:v('intro'),fields:v('fields').split('\n'),label:v('label'),color:v('color')});
+document.getElementById('err').textContent=r.errors.join(' ');document.getElementById('href').textContent=r.href;document.getElementById('html').textContent=r.html;
+document.getElementById('prev').innerHTML=r.errors.length&&!/^mailto:.+@/.test(r.href)?'':r.html};
+</script></main></body></html>

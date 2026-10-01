@@ -13,6 +13,6 @@
   var h = '<b>Broken CTA check</b> <a href="#" id="__cta_x" style="float:right;color:#9cf">close</a><br>' + res.ctaCount + ' CTA(s) found, ' + res.issues.length + ' issue(s)<ul style="padding-left:18px">';
   res.issues.forEach(function (i) { h += '<li style="color:' + (i.sev === 'high' ? '#f88' : i.sev === 'med' ? '#fc6' : '#aaa') + '">[' + i.sev + '] ' + i.msg.replace(/</g, '&lt;') + '</li>'; });
   if (!res.issues.length) h += '<li style="color:#8f8">No issues detected by these basic checks.</li>';
-  h += '</ul><a style="color:#9cf" href="mailto:tommytbomar@gmail.com?subject=WANT%20AUDIT&body=URL%3A%20' + encodeURIComponent(location.href) + '">Want a human audit? Email WANT AUDIT ($97)</a>';
+  h += '</ul><a style="color:#9cf" href="mailto:tommytbomar@gmail.com?subject=WANT%20AUDIT&body=URL%3A%20' + encodeURIComponent(location.href) + '">Want a human audit? Email WANT AUDIT ($147)</a>';
   p.innerHTML = h; document.body.appendChild(p); document.getElementById('__cta_x').onclick = function (e) { e.preventDefault(); p.remove(); };
 })();

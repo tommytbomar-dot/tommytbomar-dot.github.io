@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open/Closed Hours Widget — free embed, one script tag</title>
+<meta name="description" content="Embed a live Open now / Closed badge on any website with one script tag. Timezone-aware, split shifts, overnight hours. Free, MIT.">
+<style>body{margin:0;background:#0f1115;color:#e8eaf0;font:16px/1.5 system-ui,sans-serif}main{max-width:820px;margin:0 auto;padding:1.25rem}a{color:#4da3ff}.card{background:#171a21;border:1px solid #2a2f3a;border-radius:10px;padding:1rem;margin:1rem 0}label{display:block;font-size:.85rem;color:#9aa3b2;margin-top:.6rem}input,select,textarea{width:100%;padding:.55rem;background:#0c0e12;color:#e8eaf0;border:1px solid #2a2f3a;border-radius:6px;font:inherit}button,.btn{background:#4da3ff;color:#04121f;border:0;border-radius:6px;padding:.6rem 1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;margin:.5rem .5rem 0 0}pre{background:#0c0e12;border:1px solid #2a2f3a;padding:.8rem;border-radius:6px;overflow:auto;white-space:pre-wrap;word-break:break-word}.mut{color:#9aa3b2;font-size:.85rem}.ok{color:#8f8}.bad{color:#f88}.warn{color:#fc6}</style></head><body><main>
+<p><a href="../">← Tools</a></p><h1>Open / Closed Hours Widget</h1>
+<p>A tiny script (about 3 KB, no dependencies, no tracking) that shows <em>Open now · until 5 PM</em> or <em>Closed · opens tomorrow at 9 AM</em>, calculated in your business's time zone.</p>
+<div class="card"><h2>Live demo</h2><div data-hours-widget data-tz="America/Chicago" data-hours='{"mon":["08:00-17:00"],"tue":["08:00-17:00"],"wed":["08:00-17:00"],"thu":["08:00-17:00"],"fri":["08:00-17:00"],"sat":["09:00-12:00"]}'></div> <span class="mut">(sample hours: Mon-Fri 8-5, Sat 9-12, Central time)</span></div>
+<div class="card"><h2>Install</h2><pre id="snip"></pre><button id="cp">Copy</button>
+<ul><li><code>data-hours</code>: JSON; keys mon…sun, each a list of "HH:MM-HH:MM" (24h). Omit a day or use [] for closed. An end earlier than the start means overnight.</li><li><code>data-tz</code>: an IANA time zone, e.g. America/Chicago.</li><li><code>data-unstyled</code>: add it to skip the built-in pill style and style the element yourself (it carries <code>data-open="true|false"</code>).</li></ul>
+<p class="mut">Keep widget hours identical to your Google Business Profile hours. Holiday closures are not handled: edit the JSON. The widget runs on the visitor's clock but displays in your zone.</p></div>
+<div class="card"><strong>Want it installed and matched to your site?</strong> I'll set it up and check your hours everywhere they appear. Email for a quote.<br><a class="btn" href="mailto:tommytbomar@gmail.com?subject=WANT%20HOURS%20WIDGET">Email · WANT HOURS WIDGET</a></div>
+<p class="mut">MIT · Spiel Ventures</p>
+<script src="widget.js"></script><script>
+var s='<div data-hours-widget data-tz="America/Chicago"\n  data-hours=\'{"mon":["09:00-17:00"],"tue":["09:00-17:00"],"wed":["09:00-17:00"],"thu":["09:00-17:00"],"fri":["09:00-17:00"]}\'></div>\n<script src="https://tommytbomar-dot.github.io/tools/hours-widget/widget.js"><\/script>';
+document.getElementById('snip').textContent=s;document.getElementById('cp').onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(s)};
+</script></main></body></html>

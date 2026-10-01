@@ -1,0 +1,5 @@
+pre.sample,.sample-box{background:#0b0f14;border:1px dashed var(--line);border-radius:8px;padding:.8rem 1rem;color:var(--text);font-size:.85rem;white-space:pre-wrap;overflow-x:auto}
+code{color:var(--ok);font-size:.85rem}
+.sample-tag{display:inline-block;background:#7a5b00;color:#fff;font-size:.7rem;padding:.1rem .4rem;border-radius:4px;margin-bottom:.4rem}
+table.t{width:100%;border-collapse:collapse;font-size:.85rem}table.t th,table.t td{border:1px solid var(--line);padding:.35rem .5rem;text-align:left;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}.grid .card{margin:0}.grid h2 a{text-decoration:none}

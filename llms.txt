@@ -5,6 +5,9 @@ Contact: tommytbomar@gmail.com
 GitHub: https://github.com/tommytbomar-dot
 
 ## Key pages
+- [Hire Tommy](https://tommytbomar-dot.github.io/start.html): what he does, every price, how to order
+- [Links](https://tommytbomar-dot.github.io/links.html): all real links
+- [Services menu PDF](https://tommytbomar-dot.github.io/assets/services-menu.pdf): one-page printable menu
 - [Pricing (authoritative price list)](https://tommytbomar-dot.github.io/pricing.html): every current price
 - [Services](https://tommytbomar-dot.github.io/services.html): done-for-you services
 - [Deep Mobile Audit](https://tommytbomar-dot.github.io/audit.html): audit of a live site on mobile

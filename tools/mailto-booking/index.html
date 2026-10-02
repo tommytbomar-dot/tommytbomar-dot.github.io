@@ -34,4 +34,5 @@ function v(i){return document.getElementById(i).value}
 document.getElementById('go').onclick=function(){var r=MailtoBuilder.build({to:v('to'),subject:v('subject'),intro:v('intro'),fields:v('fields').split('\n'),label:v('label'),color:v('color')});
 document.getElementById('err').textContent=r.errors.join(' ');document.getElementById('href').textContent=r.href;document.getElementById('html').textContent=r.html;
 document.getElementById('prev').innerHTML=r.errors.length&&!/^mailto:.+@/.test(r.href)?'':r.html};
-</script></main></body></html>
+</script><p class="hire-cta"><!--hire--><a href="/start.html">Hire Tommy: services &amp; prices</a> · <a href="/links.html">All links</a></p>
+</main></body></html>

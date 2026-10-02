@@ -26,4 +26,5 @@ function v(i){return document.getElementById(i).value}
 document.getElementById('fill').onclick=function(){var p=Nap.parseLoose(v('loose'));['name','street','city','state','zip','phone'].forEach(function(k){if(p[k])document.getElementById(k).value=p[k]})};
 document.getElementById('go').onclick=function(){var r=Nap.format({name:v('name'),street:v('street'),city:v('city'),state:v('state'),zip:v('zip'),phone:v('phone'),abbreviate:document.getElementById('abbr').checked});
 document.getElementById('err').textContent=r.errors.join(' ');document.getElementById('one').textContent=r.oneLine;document.getElementById('cit').textContent=r.citationBlock;document.getElementById('html').textContent=r.html};
-</script></main></body></html>
+</script><p class="hire-cta"><!--hire--><a href="/start.html">Hire Tommy: services &amp; prices</a> · <a href="/links.html">All links</a></p>
+</main></body></html>

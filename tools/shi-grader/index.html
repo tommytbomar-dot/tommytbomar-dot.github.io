@@ -22,4 +22,5 @@ document.getElementById('go').onclick=function(){var r=ShiChecker.check(document
 var s='<h2>Score: '+r.score+'/100 (grade '+r.grade+')</h2><ul style="padding-left:1.1rem">';
 r.items.forEach(function(i){s+='<li class="'+(i.pass?'ok':'bad')+'">'+(i.pass?'✓ ':'✗ ')+i.label.replace(/</g,'&lt;')+(i.pass?'':'<br><span class="mut">'+i.fix.replace(/</g,'&lt;')+'</span>')+'</li>'});
 el.innerHTML=s+'</ul>'};
-</script></main></body></html>
+</script><p class="hire-cta"><!--hire--><a href="/start.html">Hire Tommy: services &amp; prices</a> · <a href="/links.html">All links</a></p>
+</main></body></html>

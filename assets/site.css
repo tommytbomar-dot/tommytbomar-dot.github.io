@@ -17,3 +17,6 @@ a{color:var(--accent)}footer{margin-top:2rem;color:var(--muted);font-size:.85rem
 .muted{color:var(--muted)}.nav{color:var(--muted);font-size:.9rem;margin:0 0 1rem}
 .tag{display:inline-block;font-size:.75rem;padding:.15rem .45rem;border-radius:4px;background:var(--line);color:var(--muted);margin-right:.35rem}
 .guides{margin:1.5rem 0 0}.guides h2{font-size:1.1rem;margin:0 0 .5rem}.guides ul{padding-left:1.2rem;color:var(--muted)}
+
+.pt{width:100%;border-collapse:collapse;font-size:.95rem;margin:.4rem 0}.pt td{padding:.4rem .25rem;border-bottom:1px solid var(--line);vertical-align:top}.pt td:last-child{text-align:right;color:var(--ok);font-weight:700;white-space:nowrap}
+.hire-cta{font-size:.9rem}

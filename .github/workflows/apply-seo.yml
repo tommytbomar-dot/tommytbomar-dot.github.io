@@ -1,0 +1,26 @@
+name: apply-seo
+on:
+  push:
+    branches: [main]
+    paths: ['_apply/**']
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Pillow
+        run: pip install pillow
+      - name: Apply scripted head-meta edits
+        run: |
+          base64 -d _apply/apply.b64 > /tmp/apply.py
+          python3 /tmp/apply.py .
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r -q --ignore-unmatch _apply
+          git add -A
+          git diff --cached --quiet || git commit -m "Add Open Graph tags, OG card, llms.txt, 404 page, IndexNow key (scripted, head-only edits)"
+          git push

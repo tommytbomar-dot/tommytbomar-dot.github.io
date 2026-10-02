@@ -1,0 +1,24 @@
+name: apply-findability
+on:
+  push:
+    branches: [main]
+    paths: ['_apply/apply.py']
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: pip install pillow qrcode
+      - name: Apply scripted edits
+        run: python3 _apply/apply.py .
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r -q --ignore-unmatch _apply
+          git add -A
+          git diff --cached --quiet || git commit -m "Add /start.html, /links.html, services menu, home prices block, JSON-LD, Hire-Tommy links (scripted)"
+          git push

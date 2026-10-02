@@ -1,0 +1,16 @@
+# Spiel Ventures
+> Spiel Ventures is Tommy Bomar, a solo JavaScript and Kotlin developer in Texas. He sells fixed-price, async (written, no calls) website audits, small fixes, digital checklists and photo restoration. Prices are posted publicly; there are no reviews or client logos yet and none are claimed.
+
+Contact: tommytbomar@gmail.com
+GitHub: https://github.com/tommytbomar-dot
+
+## Key pages
+- [Pricing (authoritative price list)](https://tommytbomar-dot.github.io/pricing.html): every current price
+- [Services](https://tommytbomar-dot.github.io/services.html): done-for-you services
+- [Deep Mobile Audit](https://tommytbomar-dot.github.io/audit.html): audit of a live site on mobile
+- [Products](https://tommytbomar-dot.github.io/products.html): digital checklist and script packs
+- [Photo restore](https://tommytbomar-dot.github.io/photo-restore-order.html): family photo restoration
+- [Free tools](https://tommytbomar-dot.github.io/tools/): browser tools for local business sites
+- [FAQ](https://tommytbomar-dot.github.io/faq.html)
+- [About](https://tommytbomar-dot.github.io/about.html)
+- [Sitemap](https://tommytbomar-dot.github.io/sitemap.xml)
